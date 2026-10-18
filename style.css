@@ -1,0 +1,356 @@
+
+/* =====================================
+   LELISA BELAMA - MY PORTFOLIO
+   Complete Responsive CSS
+===================================== */
+
+/* 1. Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    line-height: 1.7;
+}
+
+/* 2. Header */
+header {
+    background: #1e293b;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #334155;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h2 {
+    color: #38bdf8;
+    font-size: 26px;
+}
+
+/* 3. Navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+nav a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    background: #0f172a;
+}
+
+/* 4. Home / Hero Section */
+.hero {
+    min-height: 78vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(
+        circle at top,
+        #1e3a5f 0%,
+        #0f172a 65%
+    );
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    margin-bottom: 25px;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    color: #cbd5e1;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+/* 5. Buttons */
+.button {
+    display: inline-block;
+    background: #0284c7;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* 6. Main Content Sections */
+.content-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 35px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    scroll-margin-top: 100px;
+}
+
+.content-section h2 {
+    color: #38bdf8;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #334155;
+}
+
+.content-section h3 {
+    color: #f8fafc;
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    color: #cbd5e1;
+    margin-bottom: 12px;
+}
+
+/* 7. Education */
+#education h3 {
+    color: #38bdf8;
+}
+
+/* 8. Skills */
+.content-section ul {
+    padding-left: 25px;
+}
+
+.content-section li {
+    color: #e2e8f0;
+    margin: 10px 0;
+    padding-left: 5px;
+}
+
+.content-section li::marker {
+    color: #38bdf8;
+}
+
+/* 9. Project Cards */
+.project-card {
+    background: #0f172a;
+    padding: 22px;
+    margin: 18px 0;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    border-left: 4px solid #38bdf8;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    margin-bottom: 0;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 10. Goal Section */
+#goal p {
+    font-size: 17px;
+}
+
+/* 11. Contact Cards */
+.contact-item {
+    background: #0f172a;
+    padding: 20px;
+    margin: 16px 0;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    border-left: 4px solid #38bdf8;
+    transition: transform 0.3s ease;
+}
+
+.contact-item h3 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.contact-item a {
+    color: #e2e8f0;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #38bdf8;
+    text-decoration: underline;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+}
+
+/* 12. Footer */
+footer {
+    background: #1e293b;
+    text-align: center;
+    padding: 22px 15px;
+    color: #cbd5e1;
+    border-top: 1px solid #334155;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* 13. Images */
+img {
+    max-width: 100%;
+}
+
+/* 14. Keyboard Accessibility */
+a:focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 4px;
+}
+
+/* 15. Tablet and Mobile Responsive Design */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .hero {
+        min-height: 65vh;
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .profile-photo {
+        width: 155px;
+        height: 155px;
+    }
+
+    .content-section {
+        width: 92%;
+        padding: 25px 18px;
+        margin: 22px auto;
+    }
+
+    .content-section h2 {
+        font-size: 25px;
+    }
+
+    .project-card,
+    .contact-item {
+        padding: 17px;
+    }
+}
+
+/* 16. Small Mobile Screens */
+@media (max-width: 400px) {
+    header h2 {
+        font-size: 21px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .profile-photo {
+        width: 135px;
+        height: 135px;
+    }
+
+    .content-section {
+        width: 94%;
+        padding: 20px 14px;
+    }
+
+    .content-section h2 {
+        font-size: 22px;
+    }
+}
