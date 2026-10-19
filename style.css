@@ -587,3 +587,41 @@ nav a:hover {
         margin: 8px 0;
     }
 }
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    #projects .project-card {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    .content-section {
+        padding: 30px 18px;
+    }
+}
