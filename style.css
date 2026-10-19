@@ -496,4 +496,25 @@ section a {
         padding: 35px 6%;
     }
 }
+/* Better navigation and button effects */
 
+nav a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #1e293b;
+    color: #38bdf8;
+}
+
+.button {
+    box-shadow: 0 4px 14px #38bdf833;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    box-shadow: 0 6px 20px #38bdf866;
+    transform: translateY(-3px);
+}
