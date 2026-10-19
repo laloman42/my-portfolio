@@ -567,3 +567,23 @@ nav a:hover {
     border-radius: 12px;
     margin-top: 20px;
 }
+
+/* Display project cards side by side */
+
+#projects {
+    display: block;
+}
+
+#projects .project-card {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.333% - 18px);
+    margin: 8px;
+}
+
+@media (max-width: 700px) {
+    #projects .project-card {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
