@@ -518,3 +518,52 @@ nav a:hover {
     box-shadow: 0 6px 20px #38bdf866;
     transform: translateY(-3px);
 }
+
+/* Projects and Goal Styling */
+
+.content-section {
+    padding: 55px 8%;
+}
+
+.content-section h2 {
+    color: #38bdf8;
+    margin-bottom: 25px;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+#projects h2 {
+    grid-column: 1 / -1;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 8px 20px #00000033;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+}
+
+.project-card p {
+    color: #cbd5e1;
+}
+
+#goal {
+    background: #111827;
+    border-radius: 12px;
+    margin-top: 20px;
+}
